@@ -1,0 +1,29 @@
+{* FRET distance information *}
+
+noe
+   nres=5000
+   class inter
+   ceiling=1000
+   averaging inter cent
+   potential inter square
+   sqconstant inter 1.
+   sqexponent inter 2
+   scale inter 50.
+
+ { remarks: rigid body modeling }
+ 
+ { assign <selection> <selection> distance dminus dplus }
+        
+  { FRET pairs near Ro }
+          assign ( resid 70 and name CA )
+                 ( resid 243 and name CA ) 49.3 9.9 9.9
+          assign ( resid 9 and name CA )
+                 ( resid 302 and name CA ) 49.3 9.9 9.9
+          assign ( resid 132 and name CA )
+                 ( resid 177 and name CA ) 49.3 9.9 9.9
+          assign ( resid 2 and name CA )
+                 ( resid 482 and name CA ) 49.3 9.9 9.9
+
+ end           
+ 
+ flags include NOE end 
